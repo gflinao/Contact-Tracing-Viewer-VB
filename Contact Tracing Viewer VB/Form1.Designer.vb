@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -43,6 +44,10 @@ Partial Class Form1
         Me.Button1.Text = "Open File"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -58,4 +63,5 @@ Partial Class Form1
 
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
