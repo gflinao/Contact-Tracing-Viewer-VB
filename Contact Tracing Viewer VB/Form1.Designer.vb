@@ -31,6 +31,8 @@ Partial Class Form1
         '
         'RTBox
         '
+        Me.RTBox.BackColor = System.Drawing.Color.LightGreen
+        Me.RTBox.ForeColor = System.Drawing.SystemColors.WindowText
         Me.RTBox.Location = New System.Drawing.Point(12, 96)
         Me.RTBox.Name = "RTBox"
         Me.RTBox.Size = New System.Drawing.Size(367, 319)
@@ -39,13 +41,15 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.ForestGreen
         Me.Button1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(12, 63)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 27)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Open File"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'OFD
         '
@@ -57,6 +61,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Consolas", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.ForestGreen
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(322, 41)
