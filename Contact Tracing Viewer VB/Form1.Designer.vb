@@ -25,6 +25,7 @@ Partial Class Form1
         Me.RTBox = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OFD = New System.Windows.Forms.OpenFileDialog()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'RTBox
@@ -37,6 +38,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(12, 63)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 27)
@@ -48,20 +50,35 @@ Partial Class Form1
         '
         Me.OFD.FileName = "OpenFileDialog1"
         '
+        'Label1
+        '
+        Me.Label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(322, 41)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Trace Viewer 2.0"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(392, 427)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RTBox)
         Me.Name = "Form1"
         Me.Text = "Trace Viewer 2.0"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents RTBox As RichTextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents OFD As OpenFileDialog
+    Friend WithEvents Label1 As Label
 End Class
