@@ -7,7 +7,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim cfdialog As DialogResult
-        cfdialog = MessageBox.Show("Do you want to clear all field")
+        cfdialog = MessageBox.Show("Do you want to clear all field?")
         RTBox.Clear()
     End Sub
 End Class
