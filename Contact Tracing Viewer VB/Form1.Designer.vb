@@ -22,18 +22,18 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.RTBox = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.OFD = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
-        'RichTextBox1
+        'RTBox
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 96)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(367, 319)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = ""
+        Me.RTBox.Location = New System.Drawing.Point(12, 96)
+        Me.RTBox.Name = "RTBox"
+        Me.RTBox.Size = New System.Drawing.Size(367, 319)
+        Me.RTBox.TabIndex = 0
+        Me.RTBox.Text = ""
         '
         'Button1
         '
@@ -44,9 +44,9 @@ Partial Class Form1
         Me.Button1.Text = "Open File"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'OpenFileDialog1
+        'OFD
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OFD.FileName = "OpenFileDialog1"
         '
         'Form1
         '
@@ -54,14 +54,14 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(392, 427)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.RTBox)
         Me.Name = "Form1"
         Me.Text = "Trace Viewer 2.0"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents RTBox As RichTextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents OFD As OpenFileDialog
 End Class
